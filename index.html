@@ -33,7 +33,17 @@
               <li><a href='/'>Home</a></li>
               <li><a href='tickets.html'>Tickets</a></li>
               <li><a href='stations.html'>Stations</a></li>
-              <li><a href='about.html'>About</a></li>
+              <li><a href='about.html' data-target='#'  data-toggle='dropdown'>About <span class='caret'></span></a></li>
+              	<ul class='dropdown-menu'>
+                	<li><a href='story.html'>Our Story</a></li>
+                    <li><a href='contact.html'>Contact Us</a></li>
+                    <li class="divider"></li>
+                    <li><a href='/blog'>Blog</a></li>
+                    <li class="divider"></li>
+                    <li><a href='http://twitter.com'>Twitter</a></li>
+                    <li><a href='http://facebook.com'>Facebook</a></li>
+				</ul>
+                    
               <li><a href='contact.html'>Contact Us</a></li>
             </ul>
          </div>
@@ -51,9 +61,23 @@
         <div class='col-md-6'>
           <h2>The Fastest Way to Space</h2>
           <p class='lead'>Make your way to space in the comfort of your own rocket, elevator or transporter.</p>
-          <button type='button' class='btn btn-lg btn-default'>Take the Tour</button>
+          
+          <div class='btn-group'>
+            <button type='button' class='btn btn-default btn-lg dropdown-toggle' data-toggle='dropdown'>
+              Take the Tour <span class='caret'></span>
+            </button>
+            <ul class='dropdown-menu'>
+              <li><a href='#'>Transporter</a></li>
+              <li><a href='#'>Orbital Elevator</a></li>
+              <li><a href='#'>RocketBus</a></li>
+              <li class='divider'></li>
+              <li><a href='#'>Learn More</a></li>
+            </ul>
+          </div>
+          
           <button type='button' class='btn btn-lg btn-primary'>Book Tickets Now</button>
         </div>
+        
         <div class='col-md-6 visible-md visible-lg'>
           <img src='images/img-header.jpg' alt='Blast off with Bootstrap' />
         </div>
