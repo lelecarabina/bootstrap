@@ -13,7 +13,7 @@
 
 <body>           
 <!--Navbar-->
-	<div class='navbar navbar-default navbar-static-top'>
+	<nav class='navbar navbar-default navbar-static-top'>
         <div class='container'><!--navbar styling: it stretches across page, but its content is centered-->
            <div class='navbar-header'> 
             <a href='index.html' class='navbar-brand'>Blasting Off With Bootstrap</a>
@@ -34,7 +34,9 @@
               <li><a href='/'>Home</a></li>
               <li><a href='tickets.html'>Tickets</a></li>
               <li><a href='stations.html'>Stations</a></li>
-              <li class='dropdown-toggle' data-toggle='dropdown'><a href='about.html' data-target='#'>About <span class='caret'></span></a></li>
+              <li data-toggle='dropdown'>
+              <a class='dropdown-toggle' href='about.html' data-target='#'>About <span class='caret'></span></a>
+              </li>
               	<ul class='dropdown-menu'>
                 	<li><a href='#'>Our Story</a></li>
                     <li><a href='#'>Contact Us</a></li>
@@ -43,12 +45,11 @@
                     <li class='divider'></li>
                     <li><a href='#'>Twitter</a></li>
                     <li><a href='#'>Facebook</a></li>
+                    <li><a href='#'>Contact Us</a></li>
 				</ul>
-                    
-              <li><a href='#'>Contact Us</a></li>
             </ul>
          </div>
-    </div>
+    </nav>
 <!--End Navbar-->
 
 	    <div class='container'>
