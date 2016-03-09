@@ -13,10 +13,11 @@
 
 <body>           
 <!--Navbar-->
-	<nav class='navbar navbar-default navbar-static-top'>
+	<div class='navbar navbar-default navbar-static-top'><!--navbar-static-top: kills top rounded corners-->
         <div class='container'><!--navbar styling: it stretches across page, but its content is centered-->
            <div class='navbar-header'> 
-            <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-collapsed-ul' aria-expanded='false'>
+           	<a href='index.html' class='navbar-brand'>Blasting Off With Bootstrap</a>
+            <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse' aria-expanded='false'>
             <!--.navbar-toggle floats it to the right-->
             <!--data-toggle='collapse' will tell code to add / remove the 'collapse' class from an element. data-target... will tell code which element; in this case, the one that also has the class '.navbar-collapse'. -->
             	<span class='sr-only'>Toggle Navigation</span>
@@ -26,11 +27,10 @@
                 <span class='icon-bar'></span>
                 <!--these spans with icon-bar class add three horizontal lines one on top of the other to the button, giving it the hamburger look. We use span icon-bar b/c i fonts won't scale correctly to the different screen sizes-->
             </button>
-            <a href='index.html' class='navbar-brand'>Blasting Off With Bootstrap</a>
           </div>            
             
             <div class='collapse navbar-collapse' id='navbar-collapsed-div'>
-      		<ul class='nav navbar-nav navbar-right collapse navbar-collapse' id='navbar-collapsed-ul'><!--navigation styling 
+      		<ul class='nav navbar-nav navbar-right collapse navbar-collapse'><!--navigation styling 
             (hold this for me:  collapse navbar-collapse)-->
               <li><a href='/'>Home</a></li>
               <li><a href='tickets.html'>Tickets</a></li>
@@ -39,9 +39,6 @@
               <a class='dropdown-toggle' data-toggle='dropdown' href='about.html' role='button' data-target='#' aria-haspopup='true' aria-expanded='false'>About <span class='caret'></span></a>
               	<ul class='dropdown-menu'>
                 	<li><a href='#'>Our Story</a></li>
-                    <li><a href='#'>Contact Us</a></li>
-                    <li class='divider'></li>
-                    <li><a href='#'>Blog</a></li>
                     <li class='divider'></li>
                     <li><a href='#'>Twitter</a></li>
                     <li><a href='#'>Facebook</a></li>
@@ -51,7 +48,7 @@
             </ul>
             </div><!--/.navbar--collapse-->
          </div><!--/.container-->
-    </nav>
+    </div>
 <!--End Navbar-->
 
 	    <div class='container'>
@@ -75,7 +72,8 @@
               <li><a href='#'>Orbital Elevator</a></li>
               <li><a href='#'>RocketBus</a></li>
               <li class='divider'></li>
-              <li><a href='#'>Learn More</a></li>
+              <li><a href='#'>Learn More</a>
+              </li>
             </ul>
           </div>
           
